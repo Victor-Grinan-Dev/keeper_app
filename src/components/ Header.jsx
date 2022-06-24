@@ -2,8 +2,10 @@ import React from 'react'
 
 function  Header() {
   return (
-    <div> Header</div>
+    <div className="header"> 
+       <h1>Keeper App</h1>
+    </div>
   )
 }
 
-export default  Header
+export default  Header;

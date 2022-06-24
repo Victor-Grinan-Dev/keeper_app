@@ -1,8 +1,19 @@
-import React from 'react'
+import React from 'react';
+import './styles.css';
+import Header from './ Header';
+import Note from './Note';
+import Footer from './Footer';
+import Browser from './conctact_card/Browser';
+
 
 function Main() {
   return (
-    <div>Main</div>
+    <div className="App">
+        <Header />
+        <Note />
+        <Browser />
+        <Footer />
+    </div>
   )
 }
 

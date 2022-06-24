@@ -2,10 +2,10 @@ import React from 'react'
 
 function Note() {
   return (
-    <div>
+    <div className='note'>
 
     <h1> Title </h1>
-    <p> constent </p>
+    <p> content </p>
 
     </div>
   )
