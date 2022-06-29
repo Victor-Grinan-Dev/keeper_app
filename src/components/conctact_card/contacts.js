@@ -2,7 +2,7 @@ const conctacts = [
     {
         "id":1,
         "name":"Machete",
-        "email":"machete@onlysans",
+        "email":"machete@onlyfans",
         "tel":"+04040404040",
         "image":"https://www.seekpng.com/png/full/314-3140055_patricio-bob-esponja-png.png"
     },

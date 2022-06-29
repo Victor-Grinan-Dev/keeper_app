@@ -1,21 +1,18 @@
 import React from 'react'
 import Card from './Card'
 import conctacts from './contacts'
+import notes from '../notes'
+import Note from '../Note'
 
 
-const cardHandler = (conctact) => {
-    return <Card key={conctact.id} name={conctact.name} tel={conctact.tel} email={conctact.email} img={conctact.img}/>
-}
+
 
 function Browser() {
 
-
-
   return (
     <div>
-       {conctacts.map(
-        cardHandler
-       )}
+       {/*conctacts.map(conctact =>  <Card key={conctact.id} name={conctact.name} tel={conctact.tel} email={conctact.email} img={conctact.image}/> )*/}
+        {notes.map(note =>  <Note key={note.id} title={note.title} content={note.content} /> )}
     </div>
   )
 }

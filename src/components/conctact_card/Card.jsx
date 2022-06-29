@@ -8,7 +8,7 @@ function Card(props) {
       <div className="top">
         <p></p>       
         <h2 className="name">{props.name ? props.name : "someone"}</h2>
-        <Avatar img={props.img ? props.img : defaultImg} />
+        <Avatar img={props.img ? props.img : defaultImg} name={props.name}/>
       </div>      
       <div className="bottom">
         <p className="info">{props.email?props.email: "seomeone@gmail.com"}</p>

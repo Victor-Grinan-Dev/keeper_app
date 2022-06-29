@@ -72,11 +72,10 @@ body {
 }
 .bottom{
   border-radius: 0 0 5px 5px;
-  background-color: rgb(49, 74, 185);
   height: 50%;
 }
 .info{
-  color: rgb(255, 255, 255);
+  color: rgb(11, 10, 10);
 }
 
 .avatar img {
