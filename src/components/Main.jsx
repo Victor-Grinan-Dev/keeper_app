@@ -3,12 +3,14 @@ import './styles.css';
 import Header from './ Header';
 import Footer from './Footer';
 import Browser from './conctact_card/Browser';
+import CreateArea from './CreateArea';
 
 
 function Main() {
   return (
     <div className="App">
         <Header />
+        <CreateArea />
         <Browser />
         <Footer />
     </div>
