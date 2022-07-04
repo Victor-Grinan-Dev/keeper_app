@@ -3,14 +3,24 @@ import './styles.css';
 import Header from './ Header';
 import Footer from './Footer';
 import Browser from './conctact_card/Browser';
+import Switch from './Switch';
 import CreateArea from './CreateArea';
+import { useState } from 'react';
 
 
 function Main() {
+  const [creating, setCreating] = useState(false);
+
+
+  const expandArea = () => {
+    setCreating(!creating)
+  }
+
   return (
     <div className="App">
         <Header />
-        <CreateArea />
+        <Switch />
+        {creating ? <CreateArea addBtn={expandArea}  /> : <form onClick={expandArea}> create note </form>}
         <Browser />
         <Footer />
     </div>
