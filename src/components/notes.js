@@ -1,20 +1,20 @@
 const notes = [
     {
         id:1,
-        title:'"What is arrow function?"',
-        content:"an arrow function is a function but with a little arrow in it",
+        title:'how to use this app',
+        content:" 1 - Click in the create note section \n 2 - Fill the title field and the content field \n 3 - Hit the plus button.",
         
     },
     {
         id:2,
-        title:'"How to cook frozen chicken nugets"',
-        content:"Open the package and put them in the deep fryer machine until golden color pops up garnish with parsley on top",
+        title:'how to create a new line in the text',
+        content:" - write your text as normal and every time you need a new line input the symbol backslash followed by a lowercase n (\\n)",
         
     },
     {
         id:3,
-        title:"Munamies",
-        content:"Is a finnish comedian character also fernado",
+        title:"how to delete a note",
+        content:"Just hit the good 'ol trash can icon.",
        
     }
 ]

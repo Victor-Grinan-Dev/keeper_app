@@ -1,5 +1,5 @@
 import React from 'react'
-import defaultImage from '../../assets/meLogo-white-border.png'
+//import defaultImage from '../../assets/meLogo-white-border.png'
 
 function Avatar({img, name}) {
   return (
