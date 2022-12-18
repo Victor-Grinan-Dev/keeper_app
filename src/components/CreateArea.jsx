@@ -3,7 +3,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { Fab, Zoom } from "@mui/material";
 import { useState } from "react";
 
-function CreateArea({addBtn}) {
+function CreateArea() {
     const [writing, setWriting] = useState(false);
     const [note, setNote] = useState({
       title:"",
@@ -28,16 +28,15 @@ function CreateArea({addBtn}) {
       });
     }
 
-    const submitNote = (e) => {
-      e.preventDefault(note)
-      console.log("aqui")
+    const submitNote = () => {
+      //e.preventDefault()
       if(localStorage.getItem('notes')){
-        console.log()
         const data = JSON.parse(localStorage.getItem('notes'));
         localStorage.setItem('notes', JSON.stringify([ ...data, note]));
       }else{
         localStorage.setItem('notes', JSON.stringify([ note ]));
       }
+      window.location.reload()
     }
 
   return (

@@ -65,11 +65,16 @@ body {
 html {
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: #eee;
   padding: 0 16px;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 
+}
+.App{
+  display: flex;
+  flex-direction: column;
 }
 
 header {

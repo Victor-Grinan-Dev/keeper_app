@@ -12,11 +12,23 @@ useEffect(() => {
   setLocalNotes(data);
 }, []);
 
+const hideItem = () => {
+   
+};
+
+const delItem = (e) => {
+   const data = JSON.parse(localStorage.getItem('notes'));
+   const newData = data.filter((d) => {
+    return d.title !== e.target.parentElement.parentElement.name;
+   });
+   localStorage.setItem('notes', JSON.stringify(newData));
+   setLocalNotes(newData);
+};
+
   return (
     <div className='browser'>
-       {/*conctacts.map(conctact =>  <Card key={conctact.id} name={conctact.name} tel={conctact.tel} email={conctact.email} img={conctact.image}/> )*/}
-        {notes.map(note =>  <Note key={note.id} title={note.title} content={note.content} /> )}
-        {localNotes && localNotes.map((note,i) => <Note key={i} title={note.title} content={note.content} />)}
+        {notes.map(note =>  <Note key={note.id} title={note.title} content={note.content} id={note.id} onDel={hideItem}/> )}
+        {localNotes && localNotes.map((note,i) => <Note key={i} id={i} name={note.title} title={note.title} content={note.content} onDel={(e) => delItem(e)}/>)}
     </div>
   )
 }
