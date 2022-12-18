@@ -19,7 +19,7 @@ function Main() {
   return (
     <div className="App">
         <Header />
-        {creating ? <CreateArea addBtn={expandArea}  /> : <form onClick={addNote}> create note </form>}
+        {creating ? <CreateArea addBtn={expandArea}  /> : <form onClick={addNote}> Create a note... </form>}
         <Browser />
         <Footer />
     </div>
